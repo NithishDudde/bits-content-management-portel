@@ -1,0 +1,111 @@
+*{
+    margin: 0px; padding: 0px;
+}
+.obox{
+    border: solid 1px;
+    height: 200px;
+    display: flex;
+}
+#inbox1,#inbox2{
+    border: solid 1px;
+    height: 200px;
+}
+#inbox1{
+    width: 250px;
+}
+#inbox2{
+    width: 1700px;
+    text-align: center;
+
+}
+#clgname{
+    font-size: 45px;
+    color: red;
+}
+#scrollclg{
+    font-size: 25px;
+    font-weight: bolder;
+
+}
+#navbox{
+    border: solid 1px;
+    height: 50px;
+}
+ul li{
+    border: solid 1px;
+    height: 40px;
+    width: 185px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    background-color: navy;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    border-radius: 7px;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+ul li ul li{
+    display: none;
+    margin-bottom: 1px; 
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover{
+    background-color: brown;
+}
+.outerbox{
+    border: solid 1px black;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 350px;
+    z-index: -1;
+}
+#in1{
+    width: 700px;
+    background-image: url(pic7.png.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 350px;
+    animation-name: imgchange;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgchange{
+    10%{
+        background-image: url(pic6.png);
+    }
+    20%{
+        background-image: url(pic5.png);
+    }
+    30%{
+        background-image: url(pic3.png);
+    }
+    40%{
+        background-image: url(pic2.png);
+    }
+    50%{
+        background-image: url(pic1.png);
+    }
+    60%{
+        background-image: url(pic4.png);
+    }
+}
+#in2,#in3{
+    width: 700px;
+}
+#placebox{
+    border: solid 1px;
+    height: 300px;
+    text-align: center;
+}
